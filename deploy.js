@@ -4,7 +4,7 @@ const { interface, bytecode} = require('./compile');
 
 const provider = new HDWalletProvider(
     'olympic payment stand diagram retreat truck renew oak orphan update found own',
-    'https://goerli.infura.io/v3/5f1ae27bc65f41f1b31114e2d9405ebc'
+    'https://goerli.infura.io/v3/5f1ae27bc65f41f1b31114e2d9405ebc' ////This is a testing acoount, no money!
 );
 
 const web3 = new Web3(provider);
