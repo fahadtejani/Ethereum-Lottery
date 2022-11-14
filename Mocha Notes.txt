@@ -1,0 +1,26 @@
+class Car {
+    park(){
+        return 'stopped';
+    }
+    
+    drive(){
+        return 'vroom';
+    }
+}
+
+let car; //global variable available for all following functions
+
+beforeEach(()=>{
+    car = new Car();
+}); //creating a new instance of car to be tested before each it block
+
+describe('car', ()=>{
+    it('Can park', ()=>{
+        assert.equal(car.park(),'stopped');
+
+    });
+
+    it("Can drive",()=>{
+        assert.equal(car.drive(),'vroom');
+    })
+});
